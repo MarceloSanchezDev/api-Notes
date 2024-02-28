@@ -1,5 +1,5 @@
 export const createNote = (note) => {
-    return fetch('https://jsonplaceholder.typicode.com/posts', {
+    return fetch('/api/notes', {
       method: 'POST',
       body: JSON.stringify(note),
       headers: {
